@@ -80,6 +80,7 @@ if module == "waitAlert":
     var = True
     seg_ = int(GetParams('seg_'))
     var_ = GetParams('var_')
+    not_show_exeption_ = GetParams('not_show_exeption_')
     cont = 1
     res_ = ""
 
@@ -90,7 +91,8 @@ if module == "waitAlert":
             var = False
             res_ = True
         except:
-            PrintException()
+            if not not_show_exeption_:
+                PrintException()
             cont += 1
             res_ = False
             continue

@@ -1,6 +1,11 @@
 {
   "author": "José González - Rocketbot <jose@rocketbot.cl>",
   "description": "Módulos para aceptar o rechazar una alerta en el navegador",
+  "description_lang": {
+        "en": "Modules to accept or reject an alert in the browser",
+        "es": "Módulos para aceptar o rechazar una alerta en el navegador",
+        "pr": "Modules to accept or reject an alert in the browser"
+    },
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
   "license": "MIT",
   "homepage": "http://rocketbot.com/",
@@ -10,7 +15,8 @@
   "docker": true,
   "dependencies": {},
   "name": "acceptAlert",
-  "version": "1.1.1",
+  "version": "1.1.2",
+  "dependencies": {},
   "title": {
     "en": "AcceptAlert",
     "es": "AcceptAlert",
@@ -31,10 +37,10 @@
         "title_options": "Seleccione una Opción",
         "options": null
       },
-      "pr": {
+      "pr":{
         "title": "AcceptAlert",
-        "description": "Confirmar ou descartar um alerta",
-        "title_options": "Selecione uma opção",
+        "description": "Confirmar ou cancelar um alerta",
+        "title_options": "Select Option",
         "options": null
       },
       "form": {
@@ -92,7 +98,7 @@
               "pr": "Nome da variável sem chaves {}"
             },
             "id": "res_",
-            "css": "col-md-12"
+            "css": "col-md-6"
           }
         ]
       },
@@ -152,24 +158,29 @@
             "css": "col-md-6"
           },
           {
+            "type": "checkbox",
+            "title": {
+              "es": "No mostrar exepcion en terminal",
+              "en": "Don't show exception in terminal",
+              "pr": "Não mostrar exepção no terminal"
+            },
+            "description": {
+              "es": "Al marcar esta opción, no se mostrara una exepción en la terminal cada segundo en donde no se encontró una alerta ",
+              "en": "By checking this option, an exception will not be shown in the terminal every second where no alert was found",
+              "pr": "Ao marcar esta opção, uma exceção não será mostrada no terminal a cada segundo onde nenhuma alerta foi encontrada"
+            },
+            "id": "not_show_exeption_",
+            "css": "col-md-6"
+          },
+          {
             "type": "input",
             "title": {
               "es": "Asignar resultado a variable",
-              "en": "Assign result to variable",
-              "pr": "Atribuir resultado à variável"
-            },
-            "placeholder": {
-              "es": "Variable",
-              "en": "Variable",
-              "pr": "Variável"
-            },
-            "help": {
-              "es": "Nombre de variable sin llaves {}",
-              "en": "Variable name without braces {}",
-              "pr": "Nome da variável sem chaves {}"
+              "en": "Assign result to var",
+              "pr": "Atribuir resultado a variável"
             },
             "id": "var_",
-            "css": "col-md-6"
+            "css": "col-md-12"
           }
         ]
       },
