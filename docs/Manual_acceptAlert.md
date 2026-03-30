@@ -1,20 +1,3 @@
-<<<<<<< Updated upstream
-# AcceptAlert
-  
-Módulos para aceptar o rechazar una alerta en el navegador  
-  
-![banner](imgs/Banner_acceptAlert.png)
-## How to install this module
-  
-__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
-
-
-
-## Description of the commands
-
-### AcceptAlert
-  
-=======
 
 
 
@@ -36,23 +19,10 @@ To install the module in Rocketbot Studio, it can be done in two ways:
 
 ### AcceptAlert
 
->>>>>>> Stashed changes
 Confirm o dismiss an alert
 |Parameters|Description|example|
 | --- | --- | --- |
 |Option|||
-<<<<<<< Updated upstream
-|Send text||Text|
-|Save text||Variable|
-
-### Wait Alert
-  
-Wait for an alert the defined seconds
-|Parameters|Description|example|
-| --- | --- | --- |
-|Seconds||5|
-|Assign result to variable||Variable|
-=======
 |Send Text||Ingrese texto a enviar|
 |Save Text||Variable|
 
@@ -64,4 +34,3 @@ Wait for an alert the defined seconds
 |Seconds max.||5|
 |Don't show exception in terminal|By checking this option, an exception will not be shown in the terminal every second where no alert was found||
 |Assign result to var||Variable|
->>>>>>> Stashed changes
