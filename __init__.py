@@ -82,7 +82,13 @@ if module == "waitAlert":
     var_ = GetParams('var_')
     cont = 1
     res_ = ""
+    not_show_exeption_ = GetParams('not_show_exeption_')
 
+    if isinstance(not_show_exeption_, str):
+        not_show_exeption_ = not_show_exeption_.strip().lower() in ["true", "1", "yes"]
+    else:
+        not_show_exeption_ = bool(not_show_exeption_)
+        
     while var and cont <= seg_:
         time.sleep(1)
         try:
@@ -90,7 +96,8 @@ if module == "waitAlert":
             var = False
             res_ = True
         except:
-            PrintException()
+            if not not_show_exeption_:
+                PrintException()
             cont += 1
             res_ = False
             continue
