@@ -21,7 +21,7 @@ To install the module in Rocketbot Studio, it can be done in two ways:
 1. AcceptAlert
 Confirm o dismiss an alert
 
-2. WaitAlert
+2. Wait Alert
 Wait for an alert the defined seconds
 
 

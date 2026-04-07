@@ -8,6 +8,7 @@ Módulos para aceptar o rechazar una alerta en el navegador
 
 *Read this in other languages: [English](Manual_acceptAlert.md), [Português](Manual_acceptAlert.pr.md), [Español](Manual_acceptAlert.es.md)*
 
+![banner](imgs/Banner_acceptAlert.png)
 ## Como instalar este módulo
 
 Para instalar el módulo en Rocketbot Studio, se puede hacer de dos formas:
@@ -23,14 +24,14 @@ Confirma o cancela una alerta
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
 |Opción|||
-|Enviar texto||Ingrese texto a enviar|
+|Enviar texto||Texto|
 |Guardar texto||Variable|
 
-### WaitAlert
+### Esperar Alerta
 
 Espera por una alerta los segundos definidos
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
-|Segundos máx.||5|
+|Segundos||5|
 |No mostrar exepcion en terminal|Al marcar esta opción, no se mostrara una exepción en la terminal cada segundo en donde no se encontró una alerta ||
-|Asignar resultado a variable||Variable|
+|Asignar resultado a variable|||

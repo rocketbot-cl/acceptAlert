@@ -21,7 +21,7 @@ Para instalar el módulo en Rocketbot Studio, se puede hacer de dos formas:
 1. AcceptAlert
 Confirma o cancela una alerta
 
-2. WaitAlert
+2. Esperar Alerta
 Espera por una alerta los segundos definidos
 
 

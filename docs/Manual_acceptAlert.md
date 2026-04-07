@@ -8,6 +8,7 @@ Modules to accept or reject an alert in the browser
 
 *Read this in other languages: [English](Manual_acceptAlert.md), [Português](Manual_acceptAlert.pr.md), [Español](Manual_acceptAlert.es.md)*
 
+![banner](imgs/Banner_acceptAlert.png)
 ## How to install this module
 
 To install the module in Rocketbot Studio, it can be done in two ways:
@@ -23,14 +24,14 @@ Confirm o dismiss an alert
 |Parameters|Description|example|
 | --- | --- | --- |
 |Option|||
-|Send Text||Ingrese texto a enviar|
-|Save Text||Variable|
+|Send text||Text|
+|Save text||Variable|
 
-### WaitAlert
+### Wait Alert
 
 Wait for an alert the defined seconds
 |Parameters|Description|example|
 | --- | --- | --- |
-|Seconds max.||5|
+|Seconds||5|
 |Don't show exception in terminal|By checking this option, an exception will not be shown in the terminal every second where no alert was found||
-|Assign result to var||Variable|
+|Assign result to var|||
